@@ -1,0 +1,23 @@
+plugins {
+    id "org.springframework.boot" version "1.5.18.RELEASE"
+    id "java"
+}
+
+group = rootProject.group
+version rootProject.version
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    def SPRING_BOOT_VERSION = '1.5.18.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-rest', version: SPRING_BOOT_VERSION
+}
+
+wrapper {
+  gradleVersion = "4.8"
+}
